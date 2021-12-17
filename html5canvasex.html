@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Drawing on Canvas</title>
+
+<script>
+    window.onload = function() {
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        context.arc(150,150, 100, 0,2*Math.PI,true);
+        context.stroke();
+    };
+</script>
+<!--
+<script>
+    window.onload = function() {
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        context.moveTo(0, 0);
+        context.lineTo(300,200);
+        context.stroke();
+    };
+</script>
+-->
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="400" style="border:1px solid red;"></canvas>
+</body>
+</html>
+

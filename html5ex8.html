@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTML5 URL Input Type</title>
+<style>
+    input[type="url"]:valid{
+        outline: 2px solid green;
+    }
+    input[type="url"]:invalid{
+        outline: 2px solid red;
+    }
+</style>
+<script>
+    function getValue() {
+        var url = document.getElementById("myurl").value;
+        alert(url);
+    }
+</script>
+</head>
+<body>
+    <form>
+        <label for="myurl">Enter Website URL:</label>
+        <input type="url" id="myurl" required>
+        <button type="button" onclick="getValue();">Get Value</button>
+    </form>
+    <p><strong>Note</strong>: Enter URL in the form like https://www.google.com</p>
+</body>
+</html>

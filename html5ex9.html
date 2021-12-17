@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HTML5 Week Input Type</title>
+<script>
+    function getValue() {
+        var week = document.getElementById("myweek").value;
+        alert(week);
+    }
+</script>
+</head>
+<body>
+    <form>
+        <label for="myweek">Select Week:</label>
+        <input type="week" id="myweek">
+        <button type="button" onclick="getValue();">Get Value</button>
+    </form>
+</body>
+</html>
